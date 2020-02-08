@@ -1,0 +1,47 @@
+
+#zip_form{
+  width: 100%;
+  color: #333333;
+  height: 150px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 10px 0;
+  align-items: center;
+  justify-content: space-around;
+  float: none;
+}
+
+.current_icon{
+  text-align: center;
+  margin: 1% auto;
+  height: 10em; 
+  margin: 5% 0% 10% 0%;
+}
+
+.current_icon img{
+  height: 10em; 
+  margin: -10% auto;
+}
+
+
+.temp {
+  text-align: center;
+  width: 100%;
+}
+
+.main{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title{
+  height: 6em;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+}
+
+.w-icon img{
+  height: 7em;
+}

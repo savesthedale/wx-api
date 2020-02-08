@@ -1,0 +1,26 @@
+{
+  "name": "weather",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.3",
+    "cookies": "^0.8.0",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "degrees-to-direction": "^1.1.1",
+    "dotenv": "^8.2.0",
+    "express": "~4.16.0",
+    "express-session": "^1.17.0",
+    "hjs": "~0.0.6",
+    "http-errors": "~1.6.2",
+    "moment": "^2.24.0",
+    "moment-timezone": "^0.5.27",
+    "morgan": "~1.9.0",
+    "node-fetch": "^2.6.0",
+    "nodemon": "^2.0.2"
+  }
+}

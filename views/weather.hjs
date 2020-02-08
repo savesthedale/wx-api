@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>weather</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col align-self-center">
+          <div class="mx-auto">
+            <div id="zip_form" style="display: {{ display }};">
+              <form method="POST" action="/cookie">
+                <input type="text" placeholder="Enter Zip Code" name="zip" />
+                <input  class="btn btn-info" type="submit" />
+              </form>
+            </div>
+            <div class="title">
+              <div class="display-4 align-text-middle text-center">{{data.name}}</div> 
+
+            </div>
+            <div class="current_icon" style="display: {{ weatherdisplay }}; ";>                
+                  <img src="icons/{{icon}}.svg"  class="img-fluid my-3" alt="{{desc}}">
+            </div>
+            <div class="row" style="margin-bottom: 20%; display: {{ weatherdisplay }}">
+              <div class="container">
+                <div class="container">
+                  <div class="row"> 
+                    <div class="col">
+                      <div class="display-1 align-text-middle text-center"> {{temp}} &#176;F</div> 
+                    </div>
+                  </div>
+                </div>
+                <div class="container">
+                  <div class="row"> 
+                    <div class="col">
+                      <p class="display-4 text-center mt-3">{{weather.description}}</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="container">
+                  <div class="row"> 
+                    <div class="col">
+                      <p class="display-4 text-center mt-3">{{data.wind.speed}} mph</p>
+                    </div>
+                  </div>
+                </div>              
+                <div class="container">
+                  <div class="row"> 
+                    <div class="col">
+                      <p class="display-4 text-center mt-3">{{main.humidity}} %</p>
+                    </div>
+                  </div>
+                </div>
+              </div>                                  
+           </div>
+          </div>
+        </div>
+    </div>
+      
+
+</html>

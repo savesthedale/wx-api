@@ -1,0 +1,10 @@
+.current_icon{
+    height: 100px;
+    
+}
+
+.forecast_box{
+    margin-top: 4rem;
+    padding-top: 3rem;
+    border-top: 1px solid black;
+}
